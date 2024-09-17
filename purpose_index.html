@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Values Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Discover Your Top 10 Values</h1>
+    
+    <!-- Stage 1: Initial Selection -->
+    <section id="stage-1" class="quiz-stage">
+      <h2>Select the values that resonate with you.</h2>
+      <p>Scroll through and select as many values as you like, we'll trim down the list in the next step so go with your gut here. Hover over a word for more information / a description. Minimum 15.</p>
+      <div id="values-list" class="values-list"></div>
+      <button onclick="goToStage2()">Proceed to Step 2</button>
+    </section>
+    
+    <!-- Stage 2: Cull to 15 -->
+    <section id="stage-2" class="quiz-stage hidden">
+      <h2>Narrow your values to 15</h2>
+      <p>Select your top 15 values.</p>
+      <div id="stage2-list" class="values-list"></div>
+      <button onclick="goToStage3()">Proceed to Step 3</button>
+    </section>
+    
+    <!-- Stage 3: Cull to 10 -->
+    <section id="stage-3" class="quiz-stage hidden">
+      <h2>Narrow your values to 10</h2>
+      <p>Of the 15, lets select 10 you most value.</p>
+      <div id="stage3-list" class="values-list"></div>
+      <button onclick="goToStage4()">Proceed to Final Ranking</button>
+    </section>
+    
+    <!-- Stage 4: Flashcard Ranking -->
+    <section id="stage-4" class="quiz-stage hidden">
+      <h2>Rank Your Values</h2>
+      <p>Choose which value is more important to you.</p>
+      <div id="flashcard" class="flashcard">
+        <button id="value1" onclick="chooseValue(1)"></button>
+        <button id="value2" onclick="chooseValue(2)"></button>
+      </div>
+    </section>
+    
+    <!-- Final Ranking -->
+    <section id="stage-5" class="quiz-stage hidden">
+      <h2>Your Top 10 Values</h2>
+      <ul id="final-ranking"></ul>
+    </section>
+  </div>
+
+  <script src="purpose_index.js"></script>
+</body>
+</html>

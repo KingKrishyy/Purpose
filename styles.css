@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #555;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.values-list label {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 45%;
+  text-align: center;
+}
+
+.values-list input[type="checkbox"] {
+  display: none;
+}
+
+.values-list input[type="checkbox"]:checked + label {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.flashcard button {
+  width: 45%;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
